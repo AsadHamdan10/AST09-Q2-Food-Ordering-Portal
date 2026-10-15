@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Food Ordering Portal</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #263238;
+        }
+        header {
+            background: #b83227;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+        header h1 { margin: 0 0 8px; }
+        .container { max-width: 1000px; margin: 25px auto; padding: 0 18px; }
+        .promo {
+            background: #fff0d9;
+            border-left: 5px solid #e67e22;
+            padding: 16px;
+            margin-bottom: 22px;
+            border-radius: 6px;
+        }
+        h2 { color: #b83227; }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px #00000012;
+        }
+        .price { font-size: 19px; font-weight: bold; color: #16803c; }
+        .available { color: #16803c; font-weight: bold; }
+        .unavailable { color: #c62828; font-weight: bold; }
+        .category { color: #666; font-size: 13px; }
+        footer {
+            margin-top: 30px;
+            padding: 18px;
+            background: #263238;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>VIT Campus Food Court</h1>
+    <p>Online Food Ordering Portal</p>
+    <p>Fresh food, easy ordering, great taste!</p>
+</header>
+
+<main class="container">
+    <section class="promo">
+        <h2>Today's Promotion</h2>
+        <p>Student Special: Save 10% on selected meals. Offer available while stocks last.</p>
+    </section>
+
+    <h2>Restaurant Details</h2>
+    <section class="card">
+        <p><strong>Restaurant:</strong> VIT Campus Food Court</p>
+        <p><strong>Location:</strong> Vellore Campus</p>
+        <p><strong>Opening Hours:</strong> 9:00 AM – 9:00 PM</p>
+        <p><strong>Contact:</strong> foodcourt@vit.ac.in</p>
+    </section>
+
+    <h2>Food Categories & Menu</h2>
+    <section class="menu">
+        <article class="card">
+            <p class="category">CATEGORY: SOUTH INDIAN</p>
+            <h3>Masala Dosa</h3>
+            <p>Crispy dosa served with potato masala, chutney and sambar.</p>
+            <p class="price">₹80</p>
+            <p class="available">Available</p>
+        </article>
+
+        <article class="card">
+            <p class="category">CATEGORY: NORTH INDIAN</p>
+            <h3>Paneer Butter Masala</h3>
+            <p>Paneer in a creamy tomato gravy, served with two chapatis.</p>
+            <p class="price">₹150</p>
+            <p class="available">Available</p>
+        </article>
+
+        <article class="card">
+            <p class="category">CATEGORY: FAST FOOD</p>
+            <h3>Veg Burger</h3>
+            <p>Vegetable patty, lettuce and sauce in a toasted bun.</p>
+            <p class="price">₹90</p>
+            <p class="unavailable">Currently Unavailable</p>
+        </article>
+
+        <article class="card">
+            <p class="category">CATEGORY: BEVERAGES</p>
+            <h3>Fresh Lime Juice</h3>
+            <p>Refreshing lime juice served chilled.</p>
+            <p class="price">₹40</p>
+            <p class="available">Available</p>
+        </article>
+
+        <article class="card">
+            <p class="category">CATEGORY: DESSERTS</p>
+            <h3>Chocolate Brownie</h3>
+            <p>Rich chocolate brownie for a sweet finish.</p>
+            <p class="price">₹70</p>
+            <p class="available">Available</p>
+        </article>
+
+        <article class="card">
+            <p class="category">CATEGORY: COMBO MEALS</p>
+            <h3>Student Lunch Combo</h3>
+            <p>Rice, curry, vegetables and a beverage.</p>
+            <p class="price">₹120</p>
+            <p class="available">Available</p>
+        </article>
+    </section>
+</main>
+
+<footer>
+    VIT Campus Food Court | Online Food Ordering Portal | 2026
+</footer>
+</body>
+</html>
